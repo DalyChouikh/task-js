@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+<style>
+  .erreur{
+    color:red;
+    display:none;
+  }
+
+</style>
+  </head>
+  <body>
+
+<form method="post">
+  <h3>First name :</h3>
+  <h5 id ="er1" class="erreur">First name must be alphabetic!</h5>
+  <input type="text" id="f_name" >
+  <h3>Last name :</h3>
+  <h5 id ="er2" class="erreur">Last name must be alphabetic!</h5>
+  <input type="text" id="l_name" >
+  <h3>Emai :</h3>
+  <h5 id ="er3" class="erreur">Email must be valid !</h5>
+  <input type="email" id="email" >
+  <h3>Phone :</h3>
+  <h5 id ="er4" class="erreur">Phone number must be 8 digits</h5>
+  <input type="number" id="num" >
+  <h3>Password :</h3>
+  <h5 id ="er5" class="erreur">Password should contain  uppercase, lowercase, special characters and a numbers !</h5>
+  <input type="password" id="psw1" >
+  <h3>Confirm your password :</h3>
+  <h5 id ="er6" class="erreur">Confirmation password can't be different from pasword</h5>
+  <input type="password" id="psw2" >
+  <h3>Gender :</h3>
+  <h5 id ="er7" class="erreur">You must shoose your gender</h5>
+  Male <input type="radio" name="g"id="m" >
+  Female<input type="radio" name ="g" id="f">
+  <h3>Date of birth</h3>
+  <h5 id ="er8" class="erreur">You must be +18 !</h5>
+  <input type="date" id="birth"><br><br>
+  <input type="button" onclick="test()" id="btn" value="Submit">
+
+</form>
+
+<script src="test.js"></script>
+  </body>
+</html>
