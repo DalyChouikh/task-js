@@ -70,7 +70,7 @@ else {
   error2.style.display="none";
 }
 
-let error3=document.getElementById("er3");*/
+let error3=document.getElementById("er3");
 let email=document.getElementById("email").value;
 if (email.lastIndexOf(".")<email.lastIndexOf("@") || email.lastIndexOf(".")==-1 || email.length==0)
 {
@@ -82,7 +82,7 @@ else {
 }
 
 
-let error4=document.getElementById("er4");*/
+let error4=document.getElementById("er4");
 let phone=document.getElementById("num").value;
 
 if (phone.length!=8 || phone.indexOf(".")!=-1)
