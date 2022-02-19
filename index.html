@@ -8,7 +8,13 @@
     color:red;
     display:none;
   }
-
+  #myTable{
+    display: none;
+    width: fit-content;
+  }
+#up{
+  display:none;
+}
 </style>
   </head>
   <body>
@@ -33,16 +39,32 @@
   <h5 id ="er6" class="erreur">Confirmation password can't be different from pasword</h5>
   <input type="password" id="psw2" >
   <h3>Gender :</h3>
-  <h5 id ="er7" class="erreur">You must shoose your gender</h5>
-  Male <input type="radio" name="g"id="m" >
-  Female<input type="radio" name ="g" id="f">
+  <h5 id ="er7" class="erreur">You must choose your gender</h5>
+  Male <input type="radio" name="g" value="Male"id="m" >
+  Female<input type="radio" name ="g" value="Female"id="f">
   <h3>Date of birth</h3>
   <h5 id ="er8" class="erreur">You must be +18 !</h5>
   <input type="date" id="birth"><br><br>
   <input type="button" onclick="test()" id="btn" value="Submit">
-
+<div id="update_btn">
+<!-- this is the button you click when you want to update the user data , its not displayed by default  until you
+click the update button then it will switch places with the original submit button  -->
+</div>
 </form>
+<br><br>
+<table border="2" cellspacing="1" id="myTable">
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Password</th>
+    <th>Gender</th>
+    <th>Date of birth</th>
 
+  </tr>
+
+</table>
 <script src="test.js"></script>
   </body>
 </html>
