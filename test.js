@@ -126,6 +126,7 @@ let error5=document.getElementById("er5");
 if (up==0 || nrml==0 || spec ==0 || numb ==0 )
 {
   error5.style.display="block";
+  return false;
 }
 else{
 error5.style.display="none";
@@ -136,6 +137,7 @@ let error6=document.getElementById("er6");
 if (psw2!=psw1)
 {
   error6.style.display="block";
+  return false;
 }
 else {
   error6.style.display="none";
